@@ -1,0 +1,19 @@
+db:
+  host: "localhost"
+  port: 27017
+  name: "search_engine_lab"
+  collection: "documents"
+
+logic:
+  delay: 0.3 # чтобы не забанили
+  max_docs: 32000
+  user_agent: "MyStudySearchBot/1.0 (Student Lab Work)"
+
+seeds:
+  - "https://en.wikipedia.org/wiki/Airplane"
+  - "https://en.wikipedia.org/wiki/Aviation"
+  - "https://en.wikipedia.org/wiki/List_of_aircraft"
+  
+  - "https://aviation.fandom.com/wiki/Aviation_Wiki"
+  - "https://aviation.fandom.com/wiki/Boeing_747"
+  - "https://aviation.fandom.com/wiki/Category:Aircraft"
