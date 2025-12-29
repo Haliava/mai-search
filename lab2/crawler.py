@@ -147,5 +147,5 @@ class Crawler:
         print("Crawling finished")
 
 if __name__ == "__main__":
-    bot = Crawler("lab2/config.yaml")
+    bot = Crawler("config.yaml")
     bot.run()
