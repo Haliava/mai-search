@@ -15,9 +15,7 @@ def search():
     if not query:
         return render_template('index.html')
 
-    # Вызов C++ движка
     try:
-        # Запускаем процесс, передаем запрос, получаем JSON
         result = subprocess.run(
             ['./search_engine', query], 
             capture_output=True, 
@@ -25,7 +23,6 @@ def search():
             encoding='utf-8'
         )
         
-        # Если C++ упал или выдал мусор
         if result.returncode != 0:
              return f"Engine Error: {result.stderr}"
 

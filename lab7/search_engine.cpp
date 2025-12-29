@@ -160,8 +160,6 @@ struct Parser {
             pos++;
             
             auto to_exclude = parse_factor();
-            // TODO: реализовать инверсию относительно всего корпуса
-            // Пока вернем пустой, так как одиночный !word редко ищут
             return {}; 
         } 
         else if (c == '(') {
